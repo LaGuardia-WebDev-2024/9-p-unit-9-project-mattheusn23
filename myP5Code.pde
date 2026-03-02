@@ -34,15 +34,23 @@ draw = function(){
 
   if(mouseY < 200 && mousePressed)
   fill(random(255),255,255)
-  rect(0,0,100,100)
-  rect(300,0,100,100)
-   rect(0,300,100,100)
-    rect(300,300,100,100)
+  rect(0,0,100,100); //top left square
+  rect(300,0,100,100); //top  right square
+   rect(0,300,100,100); //bottom left square
+    rect(300,300,100,100);//bottom right
+
+   textSize(50);
+    text("💗",170,365)
+    text("🕳",180,380)
+
+    
+    
+
+   
+    
 
   
-
-  
-};
+}
 
 mouseClicked = function(){
   answer = round(random(1, 5));
