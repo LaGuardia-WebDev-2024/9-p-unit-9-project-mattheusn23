@@ -32,16 +32,32 @@ draw = function(){
     text("I guess", 159, 229); 
   }
 
-  if(mouseY < 200 && mousePressed)
+  if(mouseY < 200 && mousePressed){
   fill(random(255),255,255)
+
   rect(0,0,100,100); //top left square
   rect(300,0,100,100); //top  right square
    rect(0,300,100,100); //bottom left square
     rect(300,300,100,100);//bottom right
 
+  }
+
+   if(mouseY > 200 && mousePressed){
+  fill(random(127), 0, 252)
+
+  rect(0,0,100,100); //top left square
+  rect(300,0,100,100); //top  right square
+   rect(0,300,100,100); //bottom left square
+    rect(300,300,100,100);//bottom right
+
+  }
+
+
    textSize(50);
     text("💗",170,365)
-    text("🕳",180,380)
+    text("🍔",25,225)
+    text("🐵",285,225)
+    text("🕺",178,100)
 
     
     
